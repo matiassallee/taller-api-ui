@@ -1,9 +1,11 @@
 const { expect } = require('chai');
 
+const DataWrapper = require('../../wrappers/data.wrapper');
 const HeaderPage = require('../../page-repository/pages/header/header.po');
 const SignInPage = require('../../page-repository/pages/sign-in/sign-in.po');
 
 describe('Sign In - Perform Sign In with a valid user', () => {
+  const adminUser = DataWrapper.getAdminUser();
   before(() => {
     browser.url('/');
   });
@@ -13,11 +15,11 @@ describe('Sign In - Perform Sign In with a valid user', () => {
   });
   it('Should type the user email', () => {
     expect(SignInPage.txtBoxEmail.waitForDisplayed('Email text box is not displayed'));
-    SignInPage.txtBoxEmail.setValue('admintest@mailinator.com');
+    SignInPage.txtBoxEmail.setValue(adminUser.user);
   });
   it('Should type the user password', () => {
     expect(SignInPage.txtBoxPassword.waitForDisplayed('Password text box is not displayed'));
-    SignInPage.txtBoxPassword.setValue('Login_123');
+    SignInPage.txtBoxPassword.setValue(adminUser.password);
   });
   it('Should click on "Sign In" button', () => {
     expect(SignInPage.btnSignIn.waitForDisplayed('Sign In button is not displayed'));
