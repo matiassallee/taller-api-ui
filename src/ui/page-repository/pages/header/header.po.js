@@ -1,6 +1,6 @@
 const Page = require('../base.page');
 
-const Header = Object.create(Page, {
+const HeaderPage = Object.create(Page, {
   /**
    * define elements
    */
@@ -17,4 +17,4 @@ const Header = Object.create(Page, {
    */
 });
 
-module.exports = Header;
+module.exports = HeaderPage;
