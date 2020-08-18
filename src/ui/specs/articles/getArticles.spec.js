@@ -7,7 +7,6 @@ const author = dataWrapper.getAdminUser().author;
 
 describe('Articles - Get author articles', () => {
   it('Should get the articles for the author', async () => {
-    console.log(author);
     console.log(await articleRequest.getAuthorArticles(author));
   });
 });
