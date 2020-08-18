@@ -1,13 +1,13 @@
 const { expect } = require('chai');
 const axios = require('axios');
 
-
-const HomePage = require('../../page-repository/pages/home/home.po');
 const articleRequest = require('../../../api/articleHandler');
-const author = 'tallerTest';
+const dataWrapper = require('../../wrappers/data.wrapper')
+const author = dataWrapper.getAdminUser().author;
 
-describe('Homepage - Elements verification', () => {
+describe('Articles - Get author articles', () => {
   it('Should get the articles for the author', async () => {
+    console.log(author);
     console.log(await articleRequest.getAuthorArticles(author));
   });
 });
