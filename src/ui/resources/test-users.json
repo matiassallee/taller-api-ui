@@ -1,6 +1,7 @@
 {
   "admin": {
     "user": "admintest@mailinator.com",
-    "password": "Login_123"
+    "password": "Login_123",
+    "author": "adminTest"
   }
 }
