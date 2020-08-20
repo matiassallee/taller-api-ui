@@ -25,6 +25,6 @@
 
 ## Comandos útiles
 
-+ Para ejecutar toda la suite que este debajo de *specs* en nuestro wdio conf ```npm run test```
-+ Para ejecutar un test especifico de UI ```npm run test --spec ./src/ui/specs/sign-in/sign-in.spec.js```
-+ Para ejecutar un test especifico de API ````npx mocha ./src/api/specs/test.js --timeout=15000````
++ Ejecutar toda la suite que este debajo de *specs* en nuestro wdio.conf.js ```npm run test```
++ Ejecutar un test especifico de UI ```npm run test --spec ./src/ui/specs/sign-in/sign-in.spec.js```
++ Ejecutar un test especifico de API ````npx mocha ./src/api/specs/test.js --timeout=15000````
