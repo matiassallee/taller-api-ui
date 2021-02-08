@@ -13,7 +13,7 @@
 
 1. Clonar el repositorio. Para esto podemos ir a cualquier terminal y ejecutar ``` git clone https://github.com/matiassallee/taller-api-ui```
 
-2. Una vez clonado el proyecto, deberemos de ir a *Visual Studio Code* y abrir la solución en un nuevo workspace. Una vez abierta la solución, estaremos parados en el root del proyecto, debemos de ejecutar en la terminal del IDE *npm install* par que así se instalen todas las dependencias necesarias (ej: Axios)
+2. Una vez clonado el proyecto, deberemos de ir a *Visual Studio Code* y abrir la solución en un nuevo workspace. Una vez abierta la solución, estaremos parados en el root del proyecto, debemos de ejecutar en la terminal del IDE *npm install* para que así se instalen todas las dependencias necesarias (ej: Axios)
 
 ## Información de interés 
 
